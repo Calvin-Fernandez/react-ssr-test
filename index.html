@@ -1,0 +1,10 @@
+<html>
+	<body>
+		<script src="./build/bundle.js"></script>
+		<script>
+			console.log("Rendering to string ... ")
+			console.log(SSR.ReactDOMServer.renderToString(SSR.React.createElement("div")));
+			console.log("Rendered!")
+		</script>
+	</body>
+</html>
