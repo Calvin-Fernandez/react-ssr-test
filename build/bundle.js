@@ -1,4 +1,4 @@
-var SSR = (function (exports) {
+(function (exports) {
 	'use strict';
 
 	function createCommonjsModule(fn, module) {
@@ -4629,6 +4629,4 @@ var SSR = (function (exports) {
 	exports.React = React;
 	exports.ReactDOMServer = ReactDOMServer;
 
-	return exports;
-
-}({}));
+}((this.window = this.window || {})));

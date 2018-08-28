@@ -1,5 +1,4 @@
 // rollup.config.js
-//
 
 const commonjs = require('rollup-plugin-commonjs');
 const resolve = require('rollup-plugin-node-resolve');
@@ -12,8 +11,10 @@ export default {
   input: './src/index',
   output: {
     file: './build/bundle.js',
-    name: "SSR",
-    format: 'iife'
+    // hack so we don't have a silly namespace
+    name: "window",
+    format: 'iife',
+    extend: true
   },
   plugins: [
     resolve(),
