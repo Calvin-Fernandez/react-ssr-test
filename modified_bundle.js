@@ -227,7 +227,7 @@ function createCommonjsModule(fn, module) {
 	      return args[argIndex++];
 	    });
 	    if (typeof console !== 'undefined') {
-	      console.error(message);
+	      console.log(message);
 	    }
 	  };
 
@@ -272,7 +272,7 @@ function createCommonjsModule(fn, module) {
 	  printWarning$1 = function(text) {
 	    var message = 'Warning: ' + text;
 	    if (typeof console !== 'undefined') {
-	      console.error(message);
+	      console.log(message);
 	    }
 	  };
 	}
@@ -434,7 +434,7 @@ function createCommonjsModule(fn, module) {
 	      return args[argIndex++];
 	    });
 	    if (typeof console !== 'undefined') {
-	      console.warn(message);
+	      console.log(message);
 	    }
 	  };
 

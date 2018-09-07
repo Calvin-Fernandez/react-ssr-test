@@ -228,7 +228,7 @@
 		      return args[argIndex++];
 		    });
 		    if (typeof console !== 'undefined') {
-		      console.error(message);
+		      console.log(message);
 		    }
 		  };
 
@@ -273,7 +273,7 @@
 		  printWarning$1 = function(text) {
 		    var message = 'Warning: ' + text;
 		    if (typeof console !== 'undefined') {
-		      console.error(message);
+		      console.log(message);
 		    }
 		  };
 		}
@@ -435,7 +435,7 @@
 		      return args[argIndex++];
 		    });
 		    if (typeof console !== 'undefined') {
-		      console.warn(message);
+		      console.log(message);
 		    }
 		  };
 
@@ -5532,6 +5532,18 @@
 	  var FluxContainer_AdsPEBIGAdAccountSelectorContainer_8 = function(props) {
 	    if (props.x === 8) {
 	      return React_1.createElement(BIGAdAccountSelector7, {x: 7});
+	    }
+	  };
+
+	  var AdsPENavigationBar11 = function(props) {
+	    if (props.x === 11) {
+	      return React_1.createElement('div', {className: '_4t_9'});
+	    }
+	  };
+
+	  var FluxContainer_AdsPENavigationBarContainer_12 = function(props) {
+	    if (props.x === 12) {
+	      return React_1.createElement(AdsPENavigationBar11, {x: 11});
 	    }
 	  };
 
