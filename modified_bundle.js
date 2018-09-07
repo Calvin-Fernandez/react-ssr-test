@@ -10,8 +10,8 @@ function createCommonjsModule(fn, module) {
   var isFinite = window.isFinite;
   var isNaN = window.isNaN;
   var Infinity = window.Infinity;
-  var TypeError = function () { console.log(e + 'TYPPEERROR'); };
-  var Error = function () { console.log(e + 'Errroror'); };
+  var TypeError = function (e) { console.log(e + 'TYPPEERROR'); };
+  var Error = function (e) { console.log(e + 'Errroror'); };
   var encodeURIComponent = window.encodeURIComponent;
 
 	/*
