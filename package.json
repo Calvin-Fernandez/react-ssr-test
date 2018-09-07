@@ -2,12 +2,15 @@
   "dependencies": {
     "react": "16.4.2",
     "react-dom": "16.4.2",
+    "rollup": "0.64.0",
     "rollup-plugin-commonjs": "9.1.6",
     "rollup-plugin-node-resolve": "3.3.0",
-    "rollup-plugin-replace": "2.0.0",
-    "rollup": "0.64.0"
-   },
-   "scripts": {
-     "build": "./node_modules/rollup/bin/rollup -c"
-   }
+    "rollup-plugin-replace": "2.0.0"
+  },
+  "scripts": {
+    "build": "./node_modules/rollup/bin/rollup -c"
+  },
+  "devDependencies": {
+    "rollup-plugin-multi-entry": "^2.0.2"
+  }
 }

@@ -1,7 +1,6 @@
-(function (exports) {
-	function createCommonjsModule(fn, module) {
-		return module = { exports: {} }, fn(module, module.exports), module.exports;
-	}
+function createCommonjsModule(fn, module) {
+	return module = { exports: {} }, fn(module, module.exports), module.exports;
+}
 
   var Object = window.Object;
   var Array = window.Array;
@@ -4614,7 +4613,3 @@
 
 	exports.React = React;
 	exports.ReactDOMServer = ReactDOMServer;
-
-  console.log(ReactDOMServer.renderToString(React.createElement('div')));
-
-}(({})));
