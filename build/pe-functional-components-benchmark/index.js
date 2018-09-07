@@ -3897,20 +3897,7 @@
 		}
 
 		function resolve(child, context) {
-		  while (React.isValidElement(child)) {
-		    // Safe because we just checked it's an element.
-		    var element = child;
-		    var Component = element.type;
-		    {
-		      pushElementToDebugStack(element);
-		    }
-		    if (typeof Component !== 'function') {
-		      break;
-		    }
-		    processChild(element, Component);
-		  }
-
-		  // Extra closure so queue and replace can be captured properly
+			// Extra closure so queue and replace can be captured properly
 		  function processChild(element, Component) {
 		    var publicContext = processContext(Component, context);
 
@@ -4066,7 +4053,21 @@
 		    if (childContext) {
 		      context = _assign({}, context, childContext);
 		    }
+			}
+
+		  while (React.isValidElement(child)) {
+		    // Safe because we just checked it's an element.
+		    var element = child;
+		    var Component = element.type;
+		    {
+		      pushElementToDebugStack(element);
+		    }
+		    if (typeof Component !== 'function') {
+		      break;
+		    }
+		    processChild(element, Component);
 		  }
+
 		  return { child: child, context: context };
 		}
 
